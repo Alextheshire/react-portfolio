@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import ProjectCard from './components/ProjectCard';
+import Projects from './components/Projects';
 
+
+
+const projectProps = {
+  passgen:{
+    url: "https://alextheshire.github.io/password-generator/",
+    link: "./assets/passgen.png",
+    about: "This is a simple random password generator built using prompts for specifications."
+  }
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar />
+    {/* <About /> */}
+    <Projects />
+    {/* <ProjectCard projectUrl={projectProps.passgen.url} link={projectProps.passgen.link} about={projectProps.passgen.about}/> */}
+    </>
   );
 }
 
