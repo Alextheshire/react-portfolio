@@ -30,6 +30,10 @@ const styles = {
     },
     bg: {
         background:"#D8C3A5"
+    },
+    highlight:{
+        color: "#EAE7DC",
+        background: "#8E8D8A"
     }
 }
 function NavbarC(props) {
@@ -53,9 +57,9 @@ function NavbarC(props) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link onClick={changePage} name="about">About</Nav.Link>
-                        <Nav.Link onClick={changePage} name="projects">Projects</Nav.Link>
-                        <Nav.Link onClick={changePage} name="contact">Contact</Nav.Link>
+                        <Nav.Link onClick={changePage} name="about" style={props.page==='about' ? styles.highlight:null}>About</Nav.Link>
+                        <Nav.Link onClick={changePage} name="projects" style={props.page==='projects' ? styles.highlight:null}>Projects</Nav.Link>
+                        <Nav.Link onClick={changePage} name="contact" style={props.page==='contact' ? styles.highlight:null}>Contact</Nav.Link>
                         <Nav.Link href='./assets/resume.pdf' target="_blank">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

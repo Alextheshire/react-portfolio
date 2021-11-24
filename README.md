@@ -26,9 +26,9 @@ This is my portfolio!  Come here to learn a bit about me, view my projects, and 
 
   Just head to the deployed heroku link!
   
-  ![Media of application]()
+  ![Media of application](./public/assets/screencapture-alex-beres-react-portfolio-herokuapp-2021-11-23-21_50_15.png)
         
-  [Link to deployed project]()  
+  [Link to deployed project](https://alex-beres-react-portfolio.herokuapp.com/)  
 ## Questions
       
   If you have any questions, please reach out via Github or my email.
