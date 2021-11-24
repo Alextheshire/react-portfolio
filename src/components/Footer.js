@@ -23,7 +23,6 @@ function Footer(){
         <footer style={styles.footer}>
             <a style={styles.a} href="https://github.com/Alextheshire" target="_blank">Github</a>
             <a style={styles.a} href="https://www.linkedin.com/in/alex-beres-764b29218/" target="_blank">LinkedIn</a>
-            <a style={styles.a} href="https://www.linkedin.com/in/alex-beres-764b29218/" target="_blank">LinkedIn</a>
             <a style={styles.a} href="https://www.instagram.com/alextheshire/" target="_blank">Instagram</a>
             
         </footer>
