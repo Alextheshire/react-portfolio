@@ -1,26 +1,26 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
+import NavbarC from './components/NavbarC';
 import About from './components/About';
 import ProjectCard from './components/ProjectCard';
 import Projects from './components/Projects';
+import Contact from './components/Contact'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer'
 
 
 
-const projectProps = {
-  passgen:{
-    url: "https://alextheshire.github.io/password-generator/",
-    link: "./assets/passgen.png",
-    about: "This is a simple random password generator built using prompts for specifications."
-  }
-}
+
 function App() {
+const [page,setPage] = useState('about')
   return (
     <>
-    <Navbar />
-    {/* <About /> */}
-    <Projects />
-    {/* <ProjectCard projectUrl={projectProps.passgen.url} link={projectProps.passgen.link} about={projectProps.passgen.about}/> */}
+    <NavbarC page={page} setPage={setPage}/>
+    {page==='about' && <About />}
+    {page==='projects' && <Projects />}
+    {page==='contact' && <Contact />}
+    <Footer />
     </>
   );
 }

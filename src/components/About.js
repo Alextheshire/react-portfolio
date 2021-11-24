@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 const styles = {
     container:{
-        margin: "5px",
+        margin: "15px",
         padding: "5px",
         display: "flex",
         flexWrap:"wrap",
@@ -18,6 +18,8 @@ const styles = {
         marginTop: "20vh"
     },
     imgDiv:{
+        display:"flex",
+        justifyContent:"center"
     }
 }
 

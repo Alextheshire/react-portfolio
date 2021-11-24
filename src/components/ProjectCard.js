@@ -1,38 +1,50 @@
 import React, { useState } from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
 
 function ProjectCard(props) {
 
-    
+
 
     const styles = {
         container: {
             display: "flex",
             justifyContent: "center",
-            margin: "20px",
-            padding: "5px"
+            // margin: "20px",
+            // padding: "5px"
         },
         card: {
-            border: "5px solid #F2AA4CFF",
-            width: "fit-content",
-            height: "fit-content"
+            display: "flex",
+            justifyContent: "space-around",
+            flexWrap: "wrap"
 
         },
-        p: {
-            textAlign: "center"
+        outline: {
+            width: '800px'
         },
-        img: {}
+        a: {
+            color: "#101820FF",
+            textDecoration:"none"
+        }
     }
 
 
     return (
+        
         <div style={styles.container}>
-            <div style={styles.card}>
-                <a href={`${props.projectUrl}`} target="_blank">
-                    <img src={`${props.link}`} style={styles.img}height="353" width="800" />
-                </a>
-                <p style={styles.p}>{props.about}</p>
-            </div>
 
+        <Card border="info" className="my-5" bg="danger" style={styles.outline}>
+            <Card.Img variant="top" src={`${props.link}`} />
+            <Card.Body style={styles.card}>
+                <Card.Title>{props.title}</Card.Title>
+                <Card.Text>
+                    {props.about}
+                </Card.Text>
+                <Button variant="primary"><a style={styles.a} href={`${props.projectUrl}`} target="_blank" >Application</a></Button>
+                <Button variant="primary"><a style={styles.a} href={`${props.repo}`} target="_blank" >Repository</a></Button>
+            </Card.Body>
+        </Card>
         </div>
 
     )

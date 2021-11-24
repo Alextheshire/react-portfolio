@@ -1,0 +1,10 @@
+/* make the customizations */
+$theme-colors: (
+        "primary": #8E8D8A,
+        "danger": #D8C3A5,
+        "info": #8E8D8A
+);
+
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";

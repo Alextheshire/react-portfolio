@@ -1,0 +1,22 @@
+@import "custom";
+
+.header {
+  text-align: center;
+}
+
+span {
+  &.dangerText {
+    color: #dc3545;
+  }
+
+  &.infoText {
+    color: #17a2b8;
+    font-weight: bold;
+  }
+}
+
+body {
+    background: #EAE7DC;
+    // color: #5D5C61
+    
+}
