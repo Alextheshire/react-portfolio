@@ -4,6 +4,13 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
     {
+        title:"Pocket Rascal" ,
+        url: "https://pocket-rascal.herokuapp.com/",
+        repo:"https://github.com/evanhosni/pocket-rascal",
+        link: "./assets/screencapture-pocket-rascal-herokuapp-2021-12-16-13_46_58.png",
+        about: "Our final bootcamp project, Pocket Rascal was developed by Evan Hosni, Lindsay Fitzgerald, and myself.  The app allows you to create your own 'rascal', and then customize them via unlocks earned with in game currency. Won best UI/UX award."
+    },
+    {
         title:"Mental Health Tracker" ,
         url: "https://mental-health-tracker-dbt.herokuapp.com/",
         repo:"https://github.com/Alextheshire/mental-health-tracker",

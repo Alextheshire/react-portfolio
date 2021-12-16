@@ -60,7 +60,7 @@ function NavbarC(props) {
                         <Nav.Link onClick={changePage} name="about" style={props.page==='about' ? styles.highlight:null}>About</Nav.Link>
                         <Nav.Link onClick={changePage} name="projects" style={props.page==='projects' ? styles.highlight:null}>Projects</Nav.Link>
                         <Nav.Link onClick={changePage} name="contact" style={props.page==='contact' ? styles.highlight:null}>Contact</Nav.Link>
-                        <Nav.Link href='./assets/resume.pdf' target="_blank">Resume</Nav.Link>
+                        <Nav.Link href='./assets/WebDevResume.pdf' target="_blank">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
